@@ -1,0 +1,23 @@
+.cost-date {
+    display: flex;
+    flex-direction: column;
+    width: 5.5rem;
+    height: 5.5rem;
+    border: 1px solid #ECECEC;
+    background-color: #2A5B84;
+    color: #FEFAE1;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+}
+.cost-date__month {
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+.cost-date__year {
+    font-size: 0.75rem;
+}
+.cost-date__day {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
