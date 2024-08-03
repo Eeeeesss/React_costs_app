@@ -5,16 +5,19 @@ import NewCost from "./custom_components/NewCost/NewCost";
 const App = () => {
   const costs = [
     {
+      id: 'c1',
       date: new Date(2024, 7, 20),
       description: "Toyota Camry",
       amount: "19000000"
     },
     {
+      id: 'c2',
       date: new Date(2024, 7, 20),
       description: "Apartment",
       amount: "42000000"
     },
     {
+      id: 'c3',
       date: new Date(2024, 7, 20),
       description: "Business",
       amount: "46000000"
@@ -35,9 +38,14 @@ const App = () => {
   //   )
   // )
 
+  const addCostHandler = (cost) => {
+    console.log(cost)
+    console.log("App Comp")
+  }
+
   return (
     <div>
-      <NewCost/>
+      <NewCost onAddCost={addCostHandler} />
       <Costs costs={costs} />
     </div>
   );
