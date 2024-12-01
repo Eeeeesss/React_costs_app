@@ -3,7 +3,7 @@ import './Diagram.css'
 
 const Diagram = (props) => {
     const dataSetsValues = props.dataSets.map(dataSet => dataSet.value);
-
+    console.log(props)
     const MaxMonthCosts = Math.max(...dataSetsValues);
 
     return (
@@ -12,7 +12,7 @@ const Diagram = (props) => {
                 <DiagramBar
                     key={dataSet.label}
                     value={dataSet.value}
-                    maxValue={null}
+                    maxValue={MaxMonthCosts}
                     label={dataSet.label}
                 />))}
         </div>
